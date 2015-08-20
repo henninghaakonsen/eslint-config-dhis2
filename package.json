@@ -4,13 +4,28 @@
   "description": "ESLint config for DHIS2 JS projects, based on AirBnB's eslint config",
   "main": "index.js",
   "dependencies": {
-    "eslint-config-airbnb": "^0.0.7",
-    "strip-json-comments": "^1.0.4"
+    "eslint-config-airbnb": "0.0.7",
+    "strip-json-comments": "1.0.4"
   },
   "devDependencies": {},
   "scripts": {
     "test": "npm test"
   },
   "author": "Mark Polak",
-  "license": "BSD-3-Clause"
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhis2/eslint-config-dhis2.git"
+  },
+  "keywords": [
+    "ESLint",
+    "JS",
+    "DHIS2",
+    "HISP",
+    "Javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/dhis2/eslint-config-dhis2/issues"
+  },
+  "homepage": "https://github.com/dhis2/eslint-config-dhis2#readme"
 }
