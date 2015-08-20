@@ -1,5 +1,6 @@
 {
   "rules": { //Rules that are specific to dhis2 projects that differ from the AirBnB guide
-    "indent": [2, 4]//, //Use 4 spaced indentation instead of 2
+    "indent": [2, 4], //Use 4 spaced indentation instead of 2
+    "global-strict": 0 //Global strict has been removed so we can ignore this
   }
 }
