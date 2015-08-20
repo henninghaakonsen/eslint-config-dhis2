@@ -1,0 +1,5 @@
+{
+  "rules": { //Rules that are specific to dhis2 projects that differ from the AirBnB guide
+    "indent": [2, 4]//, //Use 4 spaced indentation instead of 2
+  }
+}
