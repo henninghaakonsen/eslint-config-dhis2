@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dhis2",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "description": "ESLint config for DHIS2 JS projects, based on AirBnB's eslint config",
   "main": "index.js",
   "dependencies": {
