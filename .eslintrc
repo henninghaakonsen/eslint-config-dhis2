@@ -3,6 +3,6 @@
     "indent": [2, 4], //Use 4 spaced indentation instead of 2
     "global-strict": 0, //Global strict has been removed so we can ignore this
     "max-len": [1, 120, 4, {"ignoreComments": true, "ignoreUrls": true, "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("}],
-    "complexity": [1, 5], // Cyclomatic complexity
+    "complexity": [1, 5] // Cyclomatic complexity
   }
 }
