@@ -5,16 +5,16 @@
   "main": "index.js",
   "dependencies": {
     "eslint-config-airbnb": "6.0.2",
-    "lodash.assign": "4.0.3",
+    "lodash.assign": "^4.0.4",
     "strip-json-comments": "2.0.1"
   },
   "devDependencies": {
     "eslint": "2.2.0",
-    "eslint-plugin-react": "4.0.0"
+    "eslint-plugin-react": "^4.1.0"
   },
   "peerDependencies": {
     "eslint": "2.2.0",
-    "eslint-plugin-react": "4.0.0"
+    "eslint-plugin-react": "^4.1.0"
   },
   "scripts": {
     "test": "npm test"
