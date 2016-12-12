@@ -1,17 +1,34 @@
 {
-  "rules": { //Rules that are specific to dhis2 projects that differ from the AirBnB guide
-    // General rules
-    "indent": [2, 4], //Use 4 spaced indentation instead of 2
-    "max-len": [1, 120, 4, {"ignoreComments": true, "ignoreUrls": true, "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("}],
-    "complexity": [1, 5], // Cyclomatic complexity
-
-    // React Rules
-    "react/jsx-indent-props": [2, 4], // Use 4 spaces for props indentation
-    "react/prefer-es6-class": [1, "always"], // Prefer ES6 classes but don't hard require them yet
+  "extends": "airbnb",
+  "env": { "browser": true },
+  "rules": {
+    "indent": [2, 4],
+    "max-len": [
+      1, 120, 4, {
+        "ignoreComments": true,
+        "ignoreUrls": true,
+        "ignorePattern": "^\\s*var\\s.+=\\s*require\\s*\\("
+      }
+    ],
+    "complexity": [1, 5],
+    "import/no-extraneous-dependencies": [
+      "error", {
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "no-prototype-builtins": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "react/jsx-indent": [2, 4],
+    "react/jsx-indent-props": [2, 4],
+    "react/prefer-es6-class": [1, "always"],
     "react/jsx-no-bind": [1, {
       "ignoreRefs": false,
       "allowArrowFunctions": false,
       "allowBind": false
-    }]
+    }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/no-unused-prop-types": [2, { "skipShapeProps": true }],
+    "react/forbid-prop-types": [0]
   }
 }
