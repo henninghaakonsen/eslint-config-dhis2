@@ -1,16 +1,13 @@
-var assign = require('lodash.assign');
-var AirBnBConfig = require('eslint-config-airbnb');
+const AirBnBConfig = require('eslint-config-airbnb');
+const path = require('path');
+const stripComments = require('strip-json-comments');
+const fs = require('fs');
 
-var path = require('path');
-var stripComments = require('strip-json-comments');
-var fs = require('fs');
+// add the rules from the eslintrc files
+const rules = ['node_modules/eslint-config-airbnb/.eslintrc', '.eslintrc'].reduce((allRules, file) => {
+    const filename = path.join(__dirname, file);
+    const data = stripComments(fs.readFileSync(filename, { encoding: 'utf-8' }));
+    return Object.assign(allRules, JSON.parse(data).rules);
+}, {});
 
-// you could do this all at once if you wanted to look cool
-var filename = path.join(__dirname, '.eslintrc');
-var data = fs.readFileSync(filename, {encoding: 'utf-8'});
-var dataWithoutComments = stripComments(data);
-var parsed = JSON.parse(dataWithoutComments);
-
-AirBnBConfig.rules = assign(AirBnBConfig.rules, parsed.rules);
-
-module.exports = AirBnBConfig;
+module.exports = Object.assign(AirBnBConfig, { rules });
