@@ -11,9 +11,7 @@
     "eslint-plugin-react": "^7.3.0",
     "strip-json-comments": "2.0.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "Mark Polak",
   "license": "BSD-3-Clause",
   "repository": {
