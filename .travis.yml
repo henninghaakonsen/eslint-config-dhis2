@@ -1,0 +1,15 @@
+sudo: false
+language: node_js
+node_js:
+- 6.11.3
+branches:
+  only:
+    - master
+deploy:
+  provider: npm
+  email: travis4dhis2@dhis2.org
+  api_key:
+    secure: vViwe+igDUzOXz/UnbwwLIf2+MAIPy2v0vUK9lcZhLRVu/+IRO+fJGPlc+ttT3CNJVbEFmevSxERi5yuE2dtMOksYhDK70bFPktVlon8SSRdnRxtpqYlXuJ30P3k4PI9ObK20/7+xgOgJoe2uudn+zyrpGZWP8FJltbZ6hKBspg/Ymf+8TNWyaU8uv7H94xvFKgS9X0MCKLE1GjuZdMt8Jt5scSM2KrDndei8eGI2vzZIF0MnDLn0yNA1x09l2BeFhgIl3c+jhn1NAkMoHoN5RdZWkAt/RxUCty2RnvKs5cwFN890EUdehCWvk3kGVohER9EURqQwEc5iSF8isfhZ3o4QaGeDmJ6rrZqt2Ce0IBNjmF7PJ18WGM35J0vWj3k5aA+YTzIzhotEqaGwwXHvZJvQilEU8UWh8Kn/wjaPYnKAdZQGqm35cCDd2HfP74MC44Syk+IC8qkHvaiMzxsZJOWSB/kY82S9GxGnQ1LqoHJqK3ctAWPYH1qqsVmDpEpDv+TA8tQYg4T1RNUIdBN5XoeujAAk1+jmrj7+LhJwdtwHohBNwD2jeiKhnPPMayvx1Gs19pAiCG69FitN7vs2FaQLaBRGNeSfgmwqT5ysUObhOa3iuuTquv9ExvUUAUkfDfWAqlbafPySIe+mupqxQE2s53SDclORUJpKzxmD9A=
+  on:
+    tags: true
+    repo: dhis2/eslint-config-dhis2
