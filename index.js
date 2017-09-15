@@ -5,6 +5,13 @@ const fs = require('fs');
 
 const filename = path.join(__dirname, '.eslintrc');
 const data = stripComments(fs.readFileSync(filename, { encoding: 'utf-8' }));
-const rules = JSON.parse(data).rules;
+const { rules, overrides, env } = JSON.parse(data);
 
-module.exports = Object.assign(AirBnBConfig, { rules });
+module.exports = Object.assign(
+    AirBnBConfig,
+    {
+        rules: Object.assign(AirBnBConfig.rules, rules), // Merge airbnb and dhis2 rules where ours take precedence
+        overrides,
+        env,
+    },
+);
