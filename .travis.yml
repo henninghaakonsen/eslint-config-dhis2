@@ -2,9 +2,6 @@ sudo: false
 language: node_js
 node_js:
 - 6.11.3
-branches:
-  only:
-    - master
 deploy:
   provider: npm
   email: travis4dhis2@dhis2.org
