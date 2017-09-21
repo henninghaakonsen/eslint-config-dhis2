@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+
 const AirBnBConfig = require('eslint-config-airbnb');
 const path = require('path');
 const stripComments = require('strip-json-comments');
@@ -12,6 +14,6 @@ module.exports = Object.assign(
     {
         rules: Object.assign(AirBnBConfig.rules, rules), // Merge airbnb and dhis2 rules where ours take precedence
         overrides,
-        env,
-    },
+        env
+    }
 );

@@ -27,7 +27,7 @@
     "HISP",
     "Javascript"
   ],
-  "bin": "./bin/lintchangedfiles.js",
+  "bin": {"lintchangedfiles": "./bin/lintchangedfiles.js"},
   "bugs": {
     "url": "https://github.com/dhis2/eslint-config-dhis2/issues"
   },
