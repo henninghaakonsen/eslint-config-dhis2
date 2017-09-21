@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-dhis2",
-  "version": "3.0.6",
+  "version": "3.0.7",
   "description": "ESLint config for DHIS2 JS projects, based on AirBnB's eslint config",
   "main": "index.js",
   "dependencies": {
@@ -27,7 +27,9 @@
     "HISP",
     "Javascript"
   ],
-  "bin": {"lintchangedfiles": "./bin/lintchangedfiles.js"},
+  "bin": {
+    "lintchangedfiles": "./bin/lintchangedfiles.js"
+  },
   "bugs": {
     "url": "https://github.com/dhis2/eslint-config-dhis2/issues"
   },
